@@ -1,0 +1,43 @@
+To create components in the angular:
+Ng g c componentName
+
+To create a service in the angular:
+Ng g s serviceName
+
+
+
+Property Binding using square brackets - 
+<h2> {{ title }} </h2>.  --> this is using interpolation
+<img [src] = "title" />.  --> this is using property binding
+
+In property binding the flow is always from the component to the DOM and not the inverse.
+
+Attribute Binding:
+HTML and DOM has one to one mapping and the for few attributes that don't have a representation in the DOM. 
+Such creation of the attribute needs to be mapped with the DOM, as This is the property of the DOM object and in HTML we don't have such an attribute. When using property binding. You should remember that you're actually binding to a property of a DOM object and not an attribute of an HTML.
+
+In simple, In HTML, the colspan attribute is indeed valid for <td> elements, and it specifies the number of columns that a cell should span in a table. However, Angular's compiler may not recognize it because Angular's template compiler checks for HTML attribute bindings against a list of known HTML attributes.
+
+So add "attr" Keyword.
+
+<table>
+      <tr>
+        <td [colspan]="colspan"></td>
+      </tr>
+</table>
+
+Class binding: Class called active to be used dynamically based on the values set during execution.
+
+Style Binding:
+Bootstrap styles used with "style" keyword.
+<button [style.backgroundColor] = "isActive ? 'blue' : 'white'">SAVE</button>
+
+Event Binding:
+
+<div (click) = "onDivClick()">
+  <button (click) = "onClick($event)">Save</button>
+</div>
+
+Causes event bubbling when layouts are handled.
+To stop event bubbling use 
+$event.propogation(); in the function
