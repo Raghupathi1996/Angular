@@ -3,10 +3,12 @@ import { CoursesService } from './courses.service';
 
 @Component({
   selector: 'courses',
-  template: `
-  <input (keyup) = "onKeyUp($event)" />
-  `,
+  template: ` <input [(ngModel)]="email" (keyup.enter)="onkeyUp()" /> `,
+  // [value]='email' #enteredEmail (keyup.enter)="email = enteredEmail.value; onKeyUp()"
 })
+// @Component({
+//   selector: 'courses',
+// })
 export class CoursesComponent {
   // title = "List of Course";
   // courses;
@@ -16,17 +18,15 @@ export class CoursesComponent {
   // }
   // colspan = 2;
   // isActive = true;
-
-  onDivClick(){
-    console.log("Function Div being invoked")
+  email = 'dummy@gmail.com';
+  onDivClick() {
+    console.log('Function Div being invoked');
   }
-  onClick($event: any){
-    console.log("button clicked", $event)
+  onClick($event: any) {
+    console.log('button clicked', $event);
   }
 
-  onKeyUp($event: { keyCode: number; }){
-    if($event.keyCode === 13){
-      console.log("Enter key was pressed")
-    }
+  onkeyUp() {
+    console.log('Enter key was pressed', this.email);
   }
 }
