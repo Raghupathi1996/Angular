@@ -1,8 +1,26 @@
-<!-- <h1>Angular</h1>
-<courses></courses> -->
+<!-- <h1>Hello Angular</h1> -->
+<!-- <courses></courses> -->
 <!-- <favourite></favourite> -->
 
+<!-- title casting using component  -->
 <!-- <title-casting></title-casting> -->
-<input type="text" [(ngModel)]="title"/>
+
+<!-- Title component using pipe -->
+<!-- <input type="text" [(ngModel)]="title"/>
 <br>
-{{ title | titleCast }}
+{{ title | titleCast }} -->
+
+<!-- favourite component field used in the app module, as a input field. -->
+<!-- <favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange($event)"></favourite> -->
+
+<!-- ng-content used to for content projection dynamically during run time -->
+<!-- <bootstrap-panel>
+    <ng-container class="heading">Heading</ng-container>
+    <div class="body">
+        <h2>Body</h2>
+        <p>Some content here....</p>
+    </div>
+</bootstrap-panel> -->
+
+<!-- // assignment to create a tweet post model with likes count and like-unlike option with mouse curser changes on when over the favourite icon -->
+<like [Count]="tweet.likesCount" [isSelected]="tweet.isLiked"></like>

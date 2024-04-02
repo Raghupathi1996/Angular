@@ -13,6 +13,8 @@ import { FavouriteComponent } from './favourite/favourite.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TitleCastingComponent } from './title-casting/title-casting.component';
 import { TitleCastPipe } from './title-cast.pipe';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { TitleCastPipe } from './title-cast.pipe';
     FavouriteComponent,
     TitleCastingComponent,
     TitleCastPipe,
+    PanelComponent,
+    LikeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [CoursesService, AuthorsService],

@@ -1,0 +1,6 @@
+<!-- <fa-icon [icon]="currentIcon" (click)="onSelect()" class="icon-color"></fa-icon> -->
+<!-- <fa-icon [icon]="currentIcon" (click)="toggleLike()" class="fa-iconheartregular" [ngClass]="{ 'highlighted': isLiked }"></fa-icon>
+<div>{{ Count }}</div> -->
+
+<fa-icon [icon]="currentIcon" (click)="toggleLike()" class="fa-iconheartregular" [class.highlighted]="isLiked"></fa-icon>
+<div>{{ Count }}</div>

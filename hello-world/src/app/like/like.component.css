@@ -1,0 +1,15 @@
+/* .solid-heart {
+    color: #ccc;;
+} */
+
+/* .regular-heart {
+    color: #ccc;
+} */
+
+.fa-iconheartregular {
+    color: #ccc;
+    cursor: pointer;
+}
+.highlighted {
+    color: deeppink
+}
