@@ -23,4 +23,39 @@
 </bootstrap-panel> -->
 
 <!-- // assignment to create a tweet post model with likes count and like-unlike option with mouse curser changes on when over the favourite icon -->
-<like [Count]="tweet.likesCount" [isSelected]="tweet.isLiked"></like>
+<!-- <like [Count]="tweet.likesCount" [isSelected]="tweet.isLiked"></like> -->
+
+<!-- Derivatives -->
+<!-- ng_if_else -->
+<!-- <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+<ng-template #coursesList> List of courses </ng-template>
+<ng-template #noCourses> No courses yet </ng-template> -->
+
+<!-- hidden -->
+<!-- <div [hidden]="courses.length == 0">List of Courses</div>
+<div [hidden]="courses.length > 0">No Courses yet</div> -->
+
+<!-- ngSwitch Case -->
+<!-- <nav class="nav nav-pills">
+  <a
+    class="nav-item nav-link"
+    [class.active]="viewMode === 'Map'"
+    (click)="viewMode = 'Map'"
+  >
+    Map View
+  </a>
+  <a
+    class="nav-item nav-link"
+    [class.active]="viewMode === 'List'"
+    (click)="viewMode = 'List'"
+  >
+    List View
+  </a>
+</nav> -->
+
+<!-- ngFor -->
+<!-- <ul>
+    <li *ngFor = "let course of courses; even as isEven; index as i">
+        {{ i }} - {{ course.name }} <span *ngIf="isEven">(EVEN)</span>
+    </li>
+</ul> -->
