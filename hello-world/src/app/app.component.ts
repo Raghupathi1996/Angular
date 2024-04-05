@@ -33,9 +33,31 @@ export class AppComponent {
   viewMode = 'Map'
 
   //ngForOf
-  courses = [
-    {name: "Angular Course", id:1},
-    {name: "React Course", id:2}
-  ]
+  courses: { name: string; id: number; }[] | undefined;
+  addCourse(){
+    if(!this.courses){
+      this.courses = []
+    }
+    this.courses.push({name: "Next Course", id:4})
+  }
+  deleteCourse(course: {name: string, id: number}){
+    if(!this.courses){
+      this.courses = []
+    }
+    let index = this.courses.indexOf(course)
+    if(index>-1) this.courses.splice(index, 1)
+  }
+
+  loadCourse(){
+    this.courses = [
+      {name: "Angular Course", id:1},
+      {name: "React Course", id:2},
+      {name: "Vue Course", id:3}
+    ]
+  }
+
+  trackCourses(_index: any, course: { name: string, id: number }){
+    return course? course.id : undefined
+  }
 }
 
