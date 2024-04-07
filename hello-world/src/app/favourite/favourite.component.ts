@@ -32,6 +32,11 @@ export class FavouriteComponent implements OnInit{
     this.currentIcon = this.isSelected ? this.faStarSolid : this.faStarRegular;
     this.click.emit({newvalue: this.isSelected})
   }
+
+  onClickBootStrap(){
+    this.isSelected = !this.isSelected
+  }
+
 }
 
 export interface FavouriteChangedEventArgs{

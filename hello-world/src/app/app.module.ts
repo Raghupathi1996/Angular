@@ -15,6 +15,7 @@ import { TitleCastingComponent } from './title-casting/title-casting.component';
 import { TitleCastPipe } from './title-cast.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LikeComponent } from './like/like.component';
     TitleCastPipe,
     PanelComponent,
     LikeComponent,
+    ZippyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [CoursesService, AuthorsService],

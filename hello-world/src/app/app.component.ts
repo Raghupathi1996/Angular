@@ -59,5 +59,15 @@ export class AppComponent {
   trackCourses(_index: any, course: { name: string, id: number }){
     return course? course.id : undefined
   }
+
+  // ngClass and ngStyle
+  canSave = true;
+
+  task = {
+    title:'The Angualar Course',
+    assignee:{
+      name:'Raghupathi'
+    }
+  }
 }
 

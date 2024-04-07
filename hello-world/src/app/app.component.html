@@ -61,10 +61,27 @@
 </ul> -->
 
 <!-- ngFor and change Deduction  -->
-<button (click)="loadCourse()">Load Course</button>
+<!-- <button (click)="loadCourse()">Load Course</button>
 <button (click)="addCourse()">Add Course</button>
 <ul>
   <li *ngFor = "let course of courses; trackBy: trackCourses">
     {{ course.name }} <button (click)="deleteCourse(course)">Delete Course</button>
   </li>
-</ul>
+</ul> -->
+
+<!-- ngClass and ngStyle -->
+<!-- <button 
+[ngStyle]="{
+  'backgroundColor' : canSave ? 'blue': 'gray',
+  'color' : canSave ? 'white': 'black',
+  'fontWeight': canSave? 'bold': 'normal'
+}"
+> SAVE </button> -->
+
+<!-- safe traversal -->
+<!-- <span>{{ task.assignee?.name }}</span> -->
+
+<!-- zippy assignment -->
+<zippy title="Shopping Menu" [isExpanded]="false">
+  Shopping Menu Details
+</zippy>
