@@ -37,3 +37,10 @@ Used when the tree is too big
 . Recommended to use hidden when the tree is large and the logic is proved out to be costly
 
 ### ngSwitchCase -->
+
+
+
+
+## Forms
+### 1. Template driven form
+### 2. Reactive form
