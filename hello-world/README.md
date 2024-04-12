@@ -43,4 +43,10 @@ Used when the tree is too big
 
 ## Forms
 ### 1. Template driven form
+. The directives are used where the control object is created by the DOM.
+. making them template-centric
+. offering for small scaler application
 ### 2. Reactive form
+. The **abstractcontrol** class is the parent class of *formControl* and *fromGroup* classes
+. formGroup to be utilized in the html file and also import ReactiveFormsModule in the module file.
+. use the **FormGroup** instance to create a FromControl and use the names in the html as formControlName 
